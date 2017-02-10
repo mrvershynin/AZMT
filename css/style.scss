@@ -1,0 +1,351 @@
+@import 'gradient-menu';
+@import 'reset';
+@import 'content-bg';
+
+$fs: 22px;
+$color-text: #EFEFEF;
+$color-hover: $color-text - 35;
+$color-text-hover: #878787;
+
+/* Content */
+$content-opacity: 0.6;
+/* Modal window */
+$modal-bg: #EFEFEF; 
+/* Backgroun menu */
+$color-menu-bg: #2e323f;
+/* Opacity for background menu */
+$opacity-menu: 0.7;
+$opacity1: $opacity-menu - 0.30;
+$opacity2: $opacity-menu - 0.60;
+$opacity3: $opacity-menu - 0.65;
+
+
+
+body {
+	font-size: $fs;
+}
+p {
+	font-size: $fs;
+	color: $color-text;
+	font-weight: 100;
+	letter-spacing: 1.2px;
+}
+.large {
+	background: url(../images/bg_pic.jpg) no-repeat;
+	background-size: cover;
+}
+.container-fluid, .row, .content {
+	height: 100%;
+}
+.container-fluid>.row, .tab-pane>.row  {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+/* Classes for menu */
+.menu {
+	text-transform: uppercase;
+	float: right;
+	text-align: right;
+	padding-top: 120px;
+	height: 100%;
+	width: 100%;
+	@include gradient-menu($color-menu-bg);
+	font-size: $fs;
+	font-weight: 400;
+	letter-spacing: 1.2px;
+}
+.menu>ul>li>a {
+	color: $color-text;
+	&:hover{
+		color: $color-hover;
+		background: none;
+	}
+	&:focus{
+		color: $color-hover;
+		background: none;
+	}
+}
+.menu>ul>li.active>a {
+	    color: $color-hover;
+		background: none;
+		border-bottom: 2px solid $color-hover;
+	&:hover{
+		color: $color-hover;
+		background: none;
+		border-bottom: 2px solid $color-hover;
+	}
+	&:focus{
+		color: $color-hover;
+		background: none;
+		border-bottom: 2px solid $color-hover;
+	}
+}
+.container-fluid>.row>.col-sm-3 {
+	height: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.social {
+	position: absolute;
+	bottom: 25px;
+	float: left;
+	width: 100%;
+}
+.social>ul {
+	text-align: right;
+	padding-right: 15px;
+}
+.social>ul>li>a {
+	color: $color-text;
+	&:hover{
+		color: $color-hover;
+	}
+}
+/* Classes for content */
+.row>.col-sm-9, .col-md-10 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.tab-content>.active {
+	background: rgba($color-menu-bg, $content-opacity);
+	margin-left: -20px;
+	padding-left: 40px;
+	padding-top: 50px;
+	color: $color-text + 50;
+	height: 100%;
+	overflow: auto;
+}
+.tab-content>.active>h3 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-size: $fs+5;
+}
+#home {
+	background: none;
+}
+.tab-content {
+	padding-left: 20px;
+	height: 100%;
+	overflow: hidden;
+}
+#work>.row>.slide {
+	padding-left: 20px;
+	padding-right: 10px; 
+	overflow: scroll;
+	background: rgba($color-menu-bg, $content-opacity);
+}
+#work>.row>.tab-content>.active {
+	background: none;
+	padding-left: 20px;
+}
+.tab-content>.tab-pane > h3 {
+	color: $color-text;
+	text-transform: uppercase;
+}
+.modal-content {
+	background: $modal-bg;
+}
+.nav-tabs>li>a {
+	color: $color-text;
+	font-size: $fs - 3;
+	font-weight: 200;
+	letter-spacing: 1px;
+	&:hover{
+		color: $color-menu-bg;
+	}
+}
+#contact>.btn-info {
+    color: $color-menu-bg;
+    background-color: $color-text;
+    border: none;
+    &:hover{
+		background-color: $color-text - 30;
+	}
+}
+.col-lg-4>.thumbnail, .col-sm-6>.thumbnail {
+	background-color: $color-text
+
+}
+.write_social {
+	margin-top: 20px;
+}
+.col-lg-4>.thumbnail>.caption, .col-sm-6>.thumbnail>.caption {
+	padding-bottom: 0px;
+}
+
+.thumbnail>.caption>p {
+	color: $color-menu-bg;
+	font-size: $fs - 5;
+	padding-bottom: 0px;
+	height: 28px;
+	overflow: hidden;
+}
+.play {
+	&:hover {
+		background: rgba($color-menu-bg, $opacity-menu - 0.3);
+	}
+}
+.thumbnail>.caption>h3 {
+	margin-top: 5px;
+	color: $color-menu-bg;
+	height: 30px;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+.thumbnail {
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+/*.Modal window */
+.modal-title {
+	color: $color-menu-bg;
+}
+.form-inline {
+	margin-bottom: 10px;
+}
+.form-inline>.form-group {
+	width: 49%;
+}
+.form-inline>.form-group>input {
+	width: 100%;
+}
+#contact>.row>.col-sm-8>iframe {
+	width: 100%;
+	height: 300px;
+	margin-top: 10px;
+}
+#contact>.row {
+	position: inherit;
+	top: 0px;
+	height: auto;
+}
+.row>.col-sm-8 {
+	padding-left: 0px;
+}
+/* Mobile version */
+.fa {
+	color: $color-text;
+}
+.col-xs-12>.navbar-inverse{
+	background-color: $color-menu-bg;
+	margin-bottom: 0px;
+	border: 0px solid black;
+}
+.mobile {
+	background: $color-menu-bg;
+	height: auto;
+}
+.mobile h3 {
+	color: $color-text;
+	font-size: $fs + 10;
+	margin-bottom: 20px;
+	margin-top: 0px;
+	padding-top: 50px;
+	text-align: center;
+}
+.container-fluid>.navbar-header>.navbar-brand {
+	color: $color-text;
+	font-size: $fs + 3;
+}
+.navbar-brand>.logo {
+	width: 50px;
+	height: 50px;
+}
+.mobile>.row>.col-xs-12>.container {
+	margin-top: 50px;
+}
+.panel-title {
+	text-align: center;
+}
+.panel-body p {
+	color: $color-menu-bg;
+}
+.mobile h3, .mobile p, .mobile a {
+	font-weight: 200;
+}
+.panel-title a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: $color-text;
+}
+.navbar-nav {
+	margin-bottom: 15px;
+}
+.modal-footer {
+	text-align: center;
+}
+.modal-header>.modal-title {
+	color: $color-menu-bg;
+}
+.mobile iframe {
+	width: 100%;
+	height: 100%;
+}
+.mobile .form-inline>.form-group {
+	width: 100%;
+}
+.panel-body p {
+	margin-bottom: 10px;
+	font-size: $fs - 5px;
+}
+.panel-body {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.copyright p {
+	position: absolute;
+	bottom: 5px;
+	font-size: 12px;
+	text-align: right;
+	width: 100%;
+	margin: 0;
+	padding-right: 15px;
+}
+#videoModal>.modal-dialog{
+	width: 90%;
+	height: 90%;
+}
+.modal-dialog {
+	margin-top: 25px;
+}
+.modal-dialog>.video-iframe {
+	width: 100%;
+	height: 100%;
+}
+#videoModal>button.close {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	font-size: $fs + 10;
+	color: $color-text;
+	opacity: 1;
+	&:hover {
+		color: $color-hover - 40;
+	}
+}
+.close {
+	color: $color-text;
+	opacity: 1;
+	margin-bottom: 10px;
+	&:hover {
+		color: $color-hover - 40;
+	}
+}
+.close {
+	text-shadow: none;
+}
+.logo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 120px; 
+	height: 120px;
+}
+.copyright-mob p {
+	text-align: center;
+	padding-right: 0px;
+	font-size: 12px;
+}
