@@ -213,6 +213,9 @@ p {
 .fa {
   color: #EFEFEF; }
 
+.fa:hover {
+  color: #cccccc; }
+
 .col-xs-12 > .navbar-inverse {
   background-color: #2e323f;
   margin-bottom: 0px;
@@ -327,8 +330,19 @@ p {
   top: 0px;
   left: 0px;
   width: 120px;
-  height: 120px; }
+  height: 120px;
+  -webkit-animation: opac 3s;
+  -moz-animation: opac 3s;
+  -o-animation: opac 3s;
+  animation: opac 3s; }
 
+@keyframes opac {
+  from {
+    transform: scale(0.3);
+    opacity: 0; }
+  to {
+    transition: scale(5);
+    opacity: 1; } }
 .copyright-mob p {
   text-align: center;
   padding-right: 0px;
