@@ -330,17 +330,16 @@ p {
 	}
 }
 .close {
-	color: $color-text;
-	opacity: 1;
-	margin-bottom: 10px;
-	&:hover {
-		color: $color-hover - 40;
-	}
-}
-.close {
 	text-shadow: none;
 }
 .logo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 120px; 
+	height: 120px;
+}
+.logo-index {
 	position: absolute;
 	top: 0px;
 	left: 0px;
