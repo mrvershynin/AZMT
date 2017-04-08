@@ -34,7 +34,7 @@ p {
 }
 
 .container-fluid, .row, .content {
-  height: 100%;
+  height: 100hv;
 }
 
 .container-fluid > .row, .tab-pane > .row {
@@ -433,4 +433,9 @@ p {
   bottom: 0px;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+.copyright-mob {
+  height: 40px;
+  margin-top: 20px;
 }
