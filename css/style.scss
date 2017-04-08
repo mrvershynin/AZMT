@@ -230,13 +230,16 @@ p {
 	color: $color-hover;
 }
 .col-xs-12 > .navbar-inverse{
-	background-color: transparentize(($color-menu-bg), 0.4);
+	background-color: transparentize(($color-menu-bg), 0.2);
 	margin-bottom: 0px;
 	border: 0px solid black;
 }
 .mobile {
-	background: $color-menu-bg;
 	height: auto;
+	padding: 0;
+}
+.col-xs-12 {
+	padding: 0;
 }
 .mobile h3 {
 	color: $color-text;

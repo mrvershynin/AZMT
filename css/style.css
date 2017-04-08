@@ -266,14 +266,18 @@ p {
 }
 
 .col-xs-12 > .navbar-inverse {
-  background-color: rgba(46, 50, 63, 0.6);
+  background-color: rgba(46, 50, 63, 0.8);
   margin-bottom: 0px;
   border: 0px solid black;
 }
 
 .mobile {
-  background: #2e323f;
   height: auto;
+  padding: 0;
+}
+
+.col-xs-12 {
+  padding: 0;
 }
 
 .mobile h3 {
