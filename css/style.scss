@@ -34,8 +34,8 @@ p {
 	background: url(../images/bg_pic.jpg) no-repeat;
 	background-size: cover;
 }
-.container-fluid, .row, .content {
-	height: 100hv;
+.container-fluid, .row, .content, .large {
+	height: 100%;
 }
 .container-fluid > .row, .tab-pane > .row  {
 	margin-right: 0px;
@@ -371,7 +371,9 @@ p {
 	left: 50%;
 	transform: translate(-50%, 0); 
 }
+/*
 .copyright-mob {
 	height: 40px;
 	margin-top: 20px;
 }
+*/

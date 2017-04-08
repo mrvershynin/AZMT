@@ -33,8 +33,8 @@ p {
   background-size: cover;
 }
 
-.container-fluid, .row, .content {
-  height: 100hv;
+.container-fluid, .row, .content, .large {
+  height: 100%;
 }
 
 .container-fluid > .row, .tab-pane > .row {
@@ -435,7 +435,9 @@ p {
   transform: translate(-50%, 0);
 }
 
+/*
 .copyright-mob {
-  height: 40px;
-  margin-top: 20px;
+	height: 40px;
+	margin-top: 20px;
 }
+*/
