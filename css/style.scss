@@ -109,8 +109,9 @@ p {
 .tab-content > .active {
 	background: rgba($color-menu-bg, $content-opacity);
 	margin-left: -20px;
+	padding-right: 40px;
 	padding-left: 40px;
-	padding-top: 50px;
+	padding-top: 60px;
 	color: $color-text + 50;
 	height: 100%;
 	overflow: auto;
@@ -230,8 +231,7 @@ p {
 	color: $color-hover;
 }
 .col-xs-12 > .navbar-inverse{
-	background-color: transparentize(($color-menu-bg), 0.2);
-	margin-bottom: 0px;
+	background-color: transparentize(($color-menu-bg), 0.1);
 	border: 0px solid black;
 }
 .mobile {

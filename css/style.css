@@ -123,8 +123,9 @@ p {
 .tab-content > .active {
   background: rgba(46, 50, 63, 0.6);
   margin-left: -20px;
+  padding-right: 40px;
   padding-left: 40px;
-  padding-top: 50px;
+  padding-top: 60px;
   color: white;
   height: 100%;
   overflow: auto;
@@ -266,8 +267,7 @@ p {
 }
 
 .col-xs-12 > .navbar-inverse {
-  background-color: rgba(46, 50, 63, 0.8);
-  margin-bottom: 0px;
+  background-color: rgba(46, 50, 63, 0.9);
   border: 0px solid black;
 }
 
