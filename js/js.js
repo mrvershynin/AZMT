@@ -2,7 +2,7 @@
     autoPlayYouTubeModal();
     $('.send').on('click', validateForm);
     $('.send-mob').on('click', validateFormMob);
-}); 
+
 
   //SEND EMAIL IN DESKTOP VERSION
 function validateForm(){
@@ -93,3 +93,17 @@ function ifSuccessMob (data) {
           });
       });
   }
+  //DYNAMIC LOAD CONTENT IN THE PAGE
+    $('.nav li a').click(function() {
+      var toLoad  = $(this).attr('href')+' .tab-content';
+      $('.tab-content').hide('fast', loadContent);
+      function loadContent() {
+        $('.tab-content').load(toLoad,'', showNewContent())
+      }
+      function showNewContent() {
+        $('.tab-content').show('normal')
+        }
+      return false;
+    });
+
+  }); 
