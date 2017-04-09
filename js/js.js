@@ -1,5 +1,5 @@
  $('document').ready(function(){
-    autoPlayYouTubeModal();
+    //autoPlayYouTubeModal();
     $('.send').on('click', validateForm);
     $('.send-mob').on('click', validateFormMob);
 
@@ -80,7 +80,33 @@ function ifSuccessMob (data) {
 }
 
 
-//FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+//DYNAMIC LOAD CONTENT IN THE PAGE
+
+// Check for hash value in URL
+  var hash = window.location.hash.substr(1);
+  var href = $('#nav li a').each(function(){
+  var href = $(this).attr('href');
+    if(hash==href.substr(0,href.length-5)){
+  var toLoad = hash+'.html #content';
+    $('#content').load(toLoad)
+    }
+  });
+ 
+
+  $('.nav li a').click(function() {
+    var toLoad  = $(this).attr('href')+' #tab-content';
+    $('#tab-content').fadeOut(300, loadContent);
+    window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
+    function loadContent() {
+      $('#tab-content').load(toLoad,'', showNewContent());
+    }
+    function showNewContent() {
+      $('#tab-content').fadeIn(300);
+      }
+    return false;
+  });
+
+ //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
   function autoPlayYouTubeModal() {
       var trigger = $("body").find('[data-toggle="modal"]');
       trigger.click(function () {
@@ -93,17 +119,7 @@ function ifSuccessMob (data) {
           });
       });
   }
-    }); 
-  //DYNAMIC LOAD CONTENT IN THE PAGE
-    $('.nav li a.load').click(function() {
-      var toLoad  = $(this).attr('href')+' #tab-content';
-      $('#tab-content').fadeOut(300, loadContent);
-      function loadContent() {
-        $('#tab-content').load(toLoad,'', showNewContent());
-      }
-      function showNewContent() {
-        $('#tab-content').fadeIn(300);
-        }
-      return false;
-    });
+  
+  });
+  
 

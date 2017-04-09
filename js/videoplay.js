@@ -1,4 +1,7 @@
- //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+ $('document').ready(function(){
+  autoPlayYouTubeModal();
+
+  //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
   function autoPlayYouTubeModal() {
       var trigger = $("body").find('[data-toggle="modal"]');
       trigger.click(function () {
@@ -11,3 +14,6 @@
           });
       });
   }
+ });
+
+ 
