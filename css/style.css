@@ -123,6 +123,16 @@ p {
 .tab-content > .active {
   background: rgba(46, 50, 63, 0.6);
   margin-left: -20px;
+  padding-left: 40px;
+  padding-top: 60px;
+  color: white;
+  height: 100%;
+  overflow: auto;
+}
+
+#tab-content > .active {
+  background: rgba(46, 50, 63, 0.6);
+  margin-left: -20px;
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 60px;
@@ -137,11 +147,22 @@ p {
   font-size: 27px;
 }
 
+#tab-content > .active > h3 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 27px;
+}
+
 #home {
   background: none;
 }
 
 .tab-content {
+  height: 100%;
+  overflow: hidden;
+}
+
+#tab-content {
   height: 100%;
   overflow: hidden;
 }
@@ -156,6 +177,11 @@ p {
 #work > .row > .tab-content > .active {
   background: none;
   padding-left: 20px;
+}
+
+#tab-content > .tab-pane > h3 {
+  color: #EFEFEF;
+  text-transform: uppercase;
 }
 
 .tab-content > .tab-pane > h3 {

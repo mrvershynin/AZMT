@@ -94,14 +94,14 @@ function ifSuccessMob (data) {
       });
   }
   //DYNAMIC LOAD CONTENT IN THE PAGE
-    $('.nav li a').click(function() {
-      var toLoad  = $(this).attr('href')+' .tab-content';
-      $('.tab-content').hide('fast', loadContent);
+    $('.nav li a.men').click(function() {
+      var toLoad  = $(this).attr('href')+' #tab-content';
+      $('#tab-content').fadeOut(300, loadContent);
       function loadContent() {
-        $('.tab-content').load(toLoad,'', showNewContent())
+        $('#tab-content').load(toLoad,'', showNewContent());
       }
       function showNewContent() {
-        $('.tab-content').show('normal')
+        $('#tab-content').fadeIn(300);
         }
       return false;
     });
