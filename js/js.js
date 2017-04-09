@@ -93,8 +93,9 @@ function ifSuccessMob (data) {
           });
       });
   }
+    }); 
   //DYNAMIC LOAD CONTENT IN THE PAGE
-    $('.nav li a.men').click(function() {
+    $('.nav li a.load').click(function() {
       var toLoad  = $(this).attr('href')+' #tab-content';
       $('#tab-content').fadeOut(300, loadContent);
       function loadContent() {
@@ -106,4 +107,3 @@ function ifSuccessMob (data) {
       return false;
     });
 
-  }); 
