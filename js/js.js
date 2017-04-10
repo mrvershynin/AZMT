@@ -1,5 +1,5 @@
  $('document').ready(function(){
-    //autoPlayYouTubeModal();
+    autoPlayYouTubeModal();
     $('.send').on('click', validateForm);
     $('.send-mob').on('click', validateFormMob);
 
@@ -106,6 +106,7 @@ function ifSuccessMob (data) {
     return false;
   });
 
+
  //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
   function autoPlayYouTubeModal() {
       var trigger = $("body").find('[data-toggle="modal"]');
@@ -119,7 +120,7 @@ function ifSuccessMob (data) {
           });
       });
   }
-  
+
   });
   
 
