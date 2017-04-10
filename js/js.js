@@ -1,5 +1,5 @@
  $('document').ready(function(){
-    autoPlayYouTubeModal();
+    //autoPlayYouTubeModal();
     $('.send').on('click', validateForm);
     $('.send-mob').on('click', validateFormMob);
 
@@ -103,10 +103,19 @@ function ifSuccessMob (data) {
     function showNewContent() {
       $('#tab-content').fadeIn(300);
       }
+    function dhtmlLoadScript(url){
+   var e = document.createElement("script");
+   e.src = url;
+   e.type="text/javascript";
+   document.getElementsByTagName("body")[0].appendChild(e); 
+  }
+    onload = function(){ 
+   dhtmlLoadScript("js/video.js");
+  }
     return false;
   });
 
-
+/*
  //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
   function autoPlayYouTubeModal() {
       var trigger = $("body").find('[data-toggle="modal"]');
@@ -120,6 +129,7 @@ function ifSuccessMob (data) {
           });
       });
   }
+*/
   
   });
   
