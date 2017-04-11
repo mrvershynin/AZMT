@@ -1,8 +1,31 @@
  $('document').ready(function(){
-    //autoPlayYouTubeModal();
     $('.send').on('click', validateForm);
     $('.send-mob').on('click', validateFormMob);
 
+//DYNAMIC LOAD #tab-content IN A INDEX.HTML
+// Check for hash value in URL
+  var hash = window.location.hash.substr(1);
+  var href = $('.nav li a').each(function(){
+  var href = $(this).attr('href');
+    if(hash==href.substr(0,href.length-5)){
+  var toLoad = hash+'.html #tab-content';
+    $('#tab-content').load(toLoad)
+    }
+  });
+ 
+
+  $('.nav li a').click(function() {
+    var toLoad  = $(this).attr('href')+' #tab-content';
+    $('#tab-content').fadeOut(300, loadContent);
+    window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
+    function loadContent() {
+      $('#tab-content').load(toLoad,'', showNewContent());
+    }
+    function showNewContent() {
+      $('#tab-content').fadeIn(300);
+      }
+  return false;
+  }); 
 
   //SEND EMAIL IN DESKTOP VERSION
 function validateForm(){
@@ -78,59 +101,8 @@ function ifSuccessMob (data) {
     $('#resultModal').modal('show');
   }
 }
-
-
-//DYNAMIC LOAD CONTENT IN THE PAGE
-
-// Check for hash value in URL
-  var hash = window.location.hash.substr(1);
-  var href = $('#nav li a').each(function(){
-  var href = $(this).attr('href');
-    if(hash==href.substr(0,href.length-5)){
-  var toLoad = hash+'.html #content';
-    $('#content').load(toLoad)
-    }
-  });
- 
-
-  $('.nav li a').click(function() {
-    var toLoad  = $(this).attr('href')+' #tab-content';
-    $('#tab-content').fadeOut(300, loadContent);
-    window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
-    function loadContent() {
-      $('#tab-content').load(toLoad,'', showNewContent());
-    }
-    function showNewContent() {
-      $('#tab-content').fadeIn(300);
-      }
-    function dhtmlLoadScript(url){
-   var e = document.createElement("script");
-   e.src = url;
-   e.type="text/javascript";
-   document.getElementsByTagName("body")[0].appendChild(e); 
-  }
-    onload = function(){ 
-   dhtmlLoadScript("js/video.js");
-  }
-    return false;
-  });
-
-/*
- //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
-  function autoPlayYouTubeModal() {
-      var trigger = $("body").find('[data-toggle="modal"]');
-      trigger.click(function () {
-          var theModal = $(this).data("target"),
-              videoSRC = $(this).attr("data-theVideo"),
-              videoSRCauto = videoSRC + "?autoplay=1";
-          $(theModal + ' iframe').attr('src', videoSRCauto);
-          $(theModal).click(function () {
-              $(theModal + ' iframe').attr('src', videoSRC);
-          });
-      });
-  }
-*/
   
   });
+
   
 

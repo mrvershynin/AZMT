@@ -441,16 +441,18 @@ p {
   animation: opac 3s;
 }
 
+/*
 @keyframes opac {
-  from {
-    transform: scale(0.3);
-    opacity: 0;
-  }
-  to {
-    transition: scale(5);
-    opacity: 1;
-  }
+	from {
+		transform: scale(0.3);
+		opacity: 0;
+	}
+	to {
+		transition: scale(5);
+		opacity: 1;
+	}
 }
+*/
 .copyright-mob p {
   position: absolute;
   padding-right: 0px;
