@@ -12,51 +12,12 @@
     <!-- My styles -->
     <link href="css/style.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-    
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/js.js"></script>
   </head>
   <body>
   
-  
-<!-- Desktop -->
-  <div class="container-fluid hidden-xs large">
-    <div class="row">
-      <div class="col-sm-3 col-md-2 menu-wrapp">
-        <div class="menu">
-          <img class="img-responsive logo" src="images/logo1.png" alt="logo">
-          <ul class="nav nav-stacked">
-            <li><a href="about.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="active"><a href="partners.html">Partners</a></li>
-          </ul>  
-        </div>
-        <div class="social">
-          <ul class="list-inline">
-              <li><a href="https://www.youtube.com/channel/UCIREVQMnIJ-82sDVkPbgimw" target="_blank"><i class="fa fa-youtube"></i></a></li>
-              <li><a href="https://www.facebook.com/azmtproduction?__mref=message_bubble" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="https://vk.com/azmtproduction" target="_blank"><i class="fa fa-vk"></i></a></li>
-          </ul>
-        </div>
-        <div class="copyright">
-        	<p>COPYRIGHT 2017 AZMT</p>
-        </div>
-      </div>
-
-      <div class="col-sm-9 col-md-10 content">
-          <div id="tab-content">
-            <div id="partners" class="tab-pane in active">
-              <h3>Partners</h3>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- Desktop end -->
-
 <!-- Mobile -->    
   <div class="container-fluid mobile hidden-sm hidden-md hidden-lg">
     <div class="row">
@@ -69,14 +30,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                    
               </button>
-              <a class="navbar-brand" href="#"><img class="img-responsive logo" src="images/logo1.png" alt="logo"></a>
+              <a class="navbar-brand" href="index.html"><img class="img-responsive logo" src="images/logo1.png" alt="logo"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">
-                <li><a data-toggle="collapse" data-target="#myNavbar" href="#about1">About</a></li>
-                <li><a data-toggle="collapse" data-target="#myNavbar" href="#work1">Work</a></li>
-                <li><a data-toggle="collapse" data-target="#myNavbar" href="#contact1">Contact</a></li>
-                <li><a data-toggle="collapse" data-target="#myNavbar" href="#partners1">Partners</a></li>
+                <li><a data-toggle="collapse" data-target="#myNavbar" href="about.html">About</a></li>
+                <li><a data-toggle="collapse" data-target="#myNavbar" href="work.html">Work</a></li>
+                <li><a data-toggle="collapse" data-target="#myNavbar" href="contact.html">Contact</a></li>
+                <li><a data-toggle="collapse" data-target="#myNavbar" href="partners.html">Partners</a></li>
               </ul>
               <ul class="list-inline">
                 <li><a href="https://www.youtube.com/channel/UCIREVQMnIJ-82sDVkPbgimw" target="_blank"><i class="fa fa-youtube fa"></i></a></li>
@@ -87,25 +48,51 @@
             </div>
           </div>
         </nav>
-
-          <div id="parnters1">
-          	<a name="partners1"></a>
-          	<h3>Partners</h3>
-          </div>
-          <div class="row">
-          	<div class="copyright-mob">
-    		<p>COPYRIGHT 2017 AZMT</p>
-    	</div>
-          </div>
-      	
       </div>
     </div>
   </div>
 <!-- Mobile end -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <div class="container-fluid hidden-xs large">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 hidden-xs menu-wrapp">
+        <div class="menu">
+        <a class="img-responsive" href="index.html">
+          <img class="img-responsive logo-index" src="images/logo1.png" alt="logo">
+        </a>
+          <ul class="nav nav-stacked">
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="partners.html">Partners</a></li>
+          </ul>  
+        </div>
+        <div class="social">
+          <ul class="list-inline">
+              <li><a href="https://www.youtube.com/channel/UCIREVQMnIJ-82sDVkPbgimw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="https://www.facebook.com/azmtproduction?__mref=message_bubble" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://vk.com/azmtproduction" target="_blank"><i class="fa fa-vk"></i></a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>COPYRIGHT 2017 AZMT</p>
+        </div>
+      </div>
+
+      <div class="col-sm-9 col-md-10 content">
+          <div id="tab-content">
+            <div id="partners" class="tab-pane in active">
+              <h3>Partners</h3>
+            </div>
+            <div class="copyright-mob hidden-sm hidden-md hidden-lg">
+            <p>COPYRIGHT 2017 AZMT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <script src="js/bootstrap.js"></script>
   </body>
 </html>

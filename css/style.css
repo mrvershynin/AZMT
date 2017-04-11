@@ -412,6 +412,7 @@ p {
   font-size: 32px;
   color: #EFEFEF;
   opacity: 1;
+  z-index: 1100;
 }
 #videoModal > button.close:hover {
   color: #a4a4a4;
@@ -462,9 +463,7 @@ p {
   transform: translate(-50%, 0);
 }
 
-/*
 .copyright-mob {
-	height: 40px;
-	margin-top: 20px;
+  height: 40px;
+  margin-top: 20px;
 }
-*/

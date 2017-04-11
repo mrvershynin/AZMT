@@ -12,22 +12,52 @@
     <!-- My styles -->
     <link href="css/style.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-    
     <!-- Scripts -->
-
-    
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/js.js"></script>
   </head>
-    <body>
-
-    <!-- Desktop -->
-    <div class="container-fluid  large">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 hidden-xs menu-wrapp">
+  <body>
+  <!-- Mobile -->    
+  <div class="container-fluid mobile hidden-sm hidden-md hidden-lg">
+  <div class="row">
+    <div class="col-xs-12">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                    
+            </button>
+            <a class="navbar-brand" href="index.html"><img class="img-responsive logo" src="images/logo1.png" alt="logo"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a data-toggle="collapse" data-target="#myNavbar" href="about.html">About</a></li>
+              <li><a data-toggle="collapse" data-target="#myNavbar" href="work.html">Work</a></li>
+              <li><a data-toggle="collapse" data-target="#myNavbar" href="contact.html">Contact</a></li>
+              <li><a data-toggle="collapse" data-target="#myNavbar" href="partners.html">Partners</a></li>
+            </ul>
+            <ul class="list-inline">
+              <li><a href="https://www.youtube.com/channel/UCIREVQMnIJ-82sDVkPbgimw" target="_blank"><i class="fa fa-youtube fa"></i></a></li>
+              <li><a href="https://www.facebook.com/azmtproduction?__mref=message_bubble" target="_blank"><i class="fa fa-facebook fa"></i></a></li>
+              <li><a><i class="fa fa-instagram fa"></i></a></li>
+              <li><a><i class="fa fa-vk fa"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  </div>
+  <!-- Mobile end -->
+  <div class="container-fluid  large">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 hidden-xs menu-wrapp">
         <div class="menu">
-        <a class="img-responsive" href="index.html">
-          <img class="img-responsive logo-index" src="images/logo1.png" alt="logo">
-        </a>
+          <a class="img-responsive" href="index.html">
+            <img class="img-responsive logo-index" src="images/logo1.png" alt="logo">
+          </a>
           <ul class="nav nav-stacked">
             <li><a href="about.html">About</a></li>
             <li><a href="work.html">Work</a></li>
@@ -37,10 +67,10 @@
         </div>
         <div class="social">
           <ul class="list-inline">
-              <li><a href="https://www.youtube.com/channel/UCIREVQMnIJ-82sDVkPbgimw" target="_blank"><i class="fa fa-youtube"></i></a></li>
-              <li><a href="https://www.facebook.com/azmtproduction?__mref=message_bubble" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="https://vk.com/azmtproduction" target="_blank"><i class="fa fa-vk"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCIREVQMnIJ-82sDVkPbgimw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.facebook.com/azmtproduction?__mref=message_bubble" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://vk.com/azmtproduction" target="_blank"><i class="fa fa-vk"></i></a></li>
           </ul>
         </div>
         <div class="copyright">
@@ -48,240 +78,214 @@
         </div>
       </div>
 
-
-
-
-
-
         <div class="col-sm-9 col-md-10 content">
-            <div id="tab-content">
-
-              <div id="work" class="tab-pane in active">
-              
-                  <h3>Work</h3>
-                  <p>This is our latest work. But you probably knew that already, so click on all or any. Click on the image to play the video.</p>
-                
-                    <div class="row">
-                      <!-- Modal for to play videos Desctop version -->
-                      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
-                        <button type="button" class="close" data-dismiss="modal"><i class="glyphicon glyphicon-remove"></i></button>
-                          <div class="modal-dialog">
-                            <iframe class="video-iframe" src="" frameborder="0" allowfullscreen></iframe>
-                          </div>
-                      </div>
-                      <!-- End Modal for to play videos Desctop version -->
-                      <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#home1">Volunteering</a></li>
-                        <li><a data-toggle="tab" href="#menu1">Сommercials</a></li>
-                        <li><a data-toggle="tab" href="#menu2">Auto reviews</a></li>
-                      </ul>
-                      <div class="tab-content slide">
-                        <div id="home1" class="tab-pane fade in active">
-                          <h3>Volunteering</h3>
-                          <p>This section presents the work of volunteer organizations.</p>
-                          <div class="col-sm-6 col-lg-4">
-                            <div class="thumbnail">
-                            <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/6Ctc8Mbq5fg"><img src="images/ua_army_strong.jpg" alt="UA ARMY STRONG"></a>
-                              <div class="caption">
-                                <h3>UA ARMY STRONG</h3>
-                                <p>Inspiring video for Army soldiers Ukraine. </p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-6 col-lg-4">
-                            <div class="thumbnail">
-                            <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/RDIEuoYPbmU"><img src="images/animal.jpg" alt="Animal"></a>
-                              <div class="caption">
-                                <h3>Animal rights</h3>
-                                <p>The movie briefly shows the events of that day.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-6 col-lg-4">
-                            <div class="thumbnail">
-                            <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/IjHlRdLrAKA""><img src="images/back.jpg" alt="Come back"></a>
-                              <div class="caption">
-                                <h3>UA ARMY STRONG</h3>
-                                <p>The video for the Ukrainian army of the charitable organization "Come alive".</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-6 col-lg-4">
-                            <div class="thumbnail">
-                            <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/2Y1ga0uD7UY""><img src="images/cyborgs.jpg" alt="Cyborgs"></a>
-                              <div class="caption">
-                                <h3>Join the Army of Cyborgs</h3>
-                                <p>Inspiring video for Army soldiers Ukraine.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-6 col-lg-4">
-                            <div class="thumbnail">
-                            <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/7xOlPDBQesY"><img src="images/mobilization.jpg" alt="Mobilization"></a>
-                              <div class="caption">
-                                <h3>Ukraine mobilization</h3>
-                                <p>Inspiring video for Army soldiers Ukraine.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-6 col-lg-4">
-                            <div class="thumbnail">
-                            <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/I7uvUos-sz8"><img src="images/new_army.jpg" alt="New Army"></a>
-                              <div class="caption">
-                                <h3>New Ukrainian Army</h3>
-                                <p>Inspiring video for Army soldiers Ukraine.</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div id="menu1" class="tab-pane fade">
-                          <h3>Сommercials</h3>
-                          <p>This section presents the commercials for commercial organizations.</p>
-                            <div class="col-sm-6 col-lg-4">
-                              <div class="thumbnail">
-                                <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/p7jKQYTF9EY"><img src="images/dynamo.jpg" alt="Dron"></a>
-                                <div class="caption">
-                                  <h3>THE FIRST DRONE DYNAMO</h3>
-                                  <p>Advertising company "People's rear".</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                              <div class="thumbnail">
-                                <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/gW2knO9s340"><img src="images/tropfy.jpg" alt="Trophy"></a>
-                                <div class="caption">
-                                  <h3>KARPATY TROPHY</h3>
-                                  <p>Promo video events KARPATY TROPHY.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                              <div class="thumbnail">
-                                <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/47FTT1Ao-Iw"><img src="images/Painting.jpg" alt="Painting"></a>
-                                <div class="caption">
-                                  <h3>Painting session</h3>
-                                  <p>Ksenia Kozeniuk.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                              <div class="thumbnail">
-                                <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/SiP-gTcPrRw"><img src="images/podushka.jpg" alt="podushka"></a>
-                                <div class="caption">
-                                  <h3>Promo video</h3>
-                                  <p>podushka.ua</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                              <div class="thumbnail">
-                                <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/VdERWh-uI-o"><img src="images/special_forces.jpg" alt="special"></a>
-                                <div class="caption">
-                                  <h3>Promo survival ratesi</h3>
-                                  <p>Special forces Ukraine.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                              <div class="thumbnail">
-                                <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/IDtUwMAvyrg"><img src="images/automobi.jpg" alt="automobi"></a>
-                                <div class="caption">
-                                  <h3>Promo Web Service</h3>
-                                  <p>automobi.ua</p>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div id="menu2" class="tab-pane fade">
-                          <h3>Auto reviews</h3>
-                          <p>This section provides test drives and auto reviews.</p>
-                            <div class="col-sm-6 col-lg-4">
-                              <div class="thumbnail">
-                                <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/--mRmpWx-JQ"><img src="images/hummer.jpg" alt="hummer"></a>
-                                <div class="caption">
-                                  <h3>Rewiev Hummer H1</h3>
-                                  <p>SA.UA.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                              <div class="thumbnail">
-                                <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/jdEsEwnROJs"><img src="images/fiat.jpg" alt="fiat"></a>
-                                <div class="caption">
-                                  <h3>Test drive FIAT</h3>
-                                  <p>SA.UA</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                              <div class="thumbnail">
-                                <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/-t_xvFjngns"><img src="images/rtr.jpg" alt="rtr"></a>
-                                <div class="caption">
-                                  <h3>RTR Time Attack</h3>
-                                  <p>SA.UA</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                              <div class="thumbnail">
-                                <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/srRHgr1i8Zo"><img src="images/toyota.jpg" alt="toyota"></a>
-                                <div class="caption">
-                                  <h3>Test drive Toyota gt86</h3>
-                                  <p>SA.UA.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                              <div class="thumbnail">
-                                <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo=""https://www.youtube.com/embed/DonjtP5rwDM"><img src="images/nissan.jpg" alt="nissan"></a>
-                                <div class="caption">
-                                  <h3>Nissan Leaf</h3>
-                                  <p>SA.UA.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                              <div class="thumbnail">
-                                <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/sO_b8GWd0nM"><img src="images/x5.jpg" alt="x5"></a>
-                                <div class="caption">
-                                  <h3>Discovery & X5</h3>
-                                  <p>Avtoblog</p>
-                                </div>
-                              </div>
-                            </div>
-                            <script>
-  function dhtmlLoadScript(url){
-   var e = document.createElement("script");
-   e.src = url;
-   e.type="text/javascript";
-   document.getElementsByTagName("body")[0].appendChild(e); 
-   
-  }
-    onload = function(){ 
-   dhtmlLoadScript("js/video.js");
-  }
-</script>1
+          <div id="tab-content">
+            <div id="work" class="tab-pane in active">
+              <h3>Work</h3>
+              <p>This is our latest work. But you probably knew that already, so click on all or any. Click on the image to play the video.</p>
+              <div class="row">
+                <!-- Modal for to play videos Desctop version -->
+                <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+                  <button type="button" class="close" data-dismiss="modal"><i class="glyphicon glyphicon-remove"></i></button>
+                    <div class="modal-dialog">
+                      <iframe class="video-iframe" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- End Modal for to play videos Desctop version -->
+                <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#home1">Volunteering</a></li>
+                  <li><a data-toggle="tab" href="#menu1">Сommercials</a></li>
+                  <li><a data-toggle="tab" href="#menu2">Auto reviews</a></li>
+                </ul>
+                <div class="tab-content slide">
+                  <div id="home1" class="tab-pane fade in active">
+                    <h3>Volunteering</h3>
+                    <p>This section presents the work of volunteer organizations.</p>
+                    <div class="col-sm-6 col-lg-4">
+                      <div class="thumbnail">
+                      <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/6Ctc8Mbq5fg"><img src="images/ua_army_strong.jpg" alt="UA ARMY STRONG"></a>
+                        <div class="caption">
+                          <h3>UA ARMY STRONG</h3>
+                          <p>Inspiring video for Army soldiers Ukraine. </p>
                         </div>
                       </div>
                     </div>
+                    <div class="col-sm-6 col-lg-4">
+                      <div class="thumbnail">
+                      <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/RDIEuoYPbmU"><img src="images/animal.jpg" alt="Animal"></a>
+                        <div class="caption">
+                          <h3>Animal rights</h3>
+                          <p>The movie briefly shows the events of that day.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                      <div class="thumbnail">
+                      <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/IjHlRdLrAKA""><img src="images/back.jpg" alt="Come back"></a>
+                        <div class="caption">
+                          <h3>UA ARMY STRONG</h3>
+                          <p>The video for the Ukrainian army of the charitable organization "Come alive".</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                      <div class="thumbnail">
+                      <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/2Y1ga0uD7UY""><img src="images/cyborgs.jpg" alt="Cyborgs"></a>
+                        <div class="caption">
+                          <h3>Join the Army of Cyborgs</h3>
+                          <p>Inspiring video for Army soldiers Ukraine.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                      <div class="thumbnail">
+                      <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/7xOlPDBQesY"><img src="images/mobilization.jpg" alt="Mobilization"></a>
+                        <div class="caption">
+                          <h3>Ukraine mobilization</h3>
+                          <p>Inspiring video for Army soldiers Ukraine.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                      <div class="thumbnail">
+                      <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/I7uvUos-sz8"><img src="images/new_army.jpg" alt="New Army"></a>
+                        <div class="caption">
+                          <h3>New Ukrainian Army</h3>
+                          <p>Inspiring video for Army soldiers Ukraine.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="menu1" class="tab-pane fade">
+                    <h3>Сommercials</h3>
+                    <p>This section presents the commercials for commercial organizations.</p>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="thumbnail">
+                          <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/p7jKQYTF9EY"><img src="images/dynamo.jpg" alt="Dron"></a>
+                          <div class="caption">
+                            <h3>THE FIRST DRONE DYNAMO</h3>
+                            <p>Advertising company "People's rear".</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="thumbnail">
+                          <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/gW2knO9s340"><img src="images/tropfy.jpg" alt="Trophy"></a>
+                          <div class="caption">
+                            <h3>KARPATY TROPHY</h3>
+                            <p>Promo video events KARPATY TROPHY.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="thumbnail">
+                          <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/47FTT1Ao-Iw"><img src="images/Painting.jpg" alt="Painting"></a>
+                          <div class="caption">
+                            <h3>Painting session</h3>
+                            <p>Ksenia Kozeniuk.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="thumbnail">
+                          <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/SiP-gTcPrRw"><img src="images/podushka.jpg" alt="podushka"></a>
+                          <div class="caption">
+                            <h3>Promo video</h3>
+                            <p>podushka.ua</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="thumbnail">
+                          <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/VdERWh-uI-o"><img src="images/special_forces.jpg" alt="special"></a>
+                          <div class="caption">
+                            <h3>Promo survival ratesi</h3>
+                            <p>Special forces Ukraine.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="thumbnail">
+                          <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/IDtUwMAvyrg"><img src="images/automobi.jpg" alt="automobi"></a>
+                          <div class="caption">
+                            <h3>Promo Web Service</h3>
+                            <p>automobi.ua</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div id="menu2" class="tab-pane fade">
+                    <h3>Auto reviews</h3>
+                    <p>This section provides test drives and auto reviews.</p>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="thumbnail">
+                          <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/--mRmpWx-JQ"><img src="images/hummer.jpg" alt="hummer"></a>
+                          <div class="caption">
+                            <h3>Rewiev Hummer H1</h3>
+                            <p>SA.UA.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="thumbnail">
+                          <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/jdEsEwnROJs"><img src="images/fiat.jpg" alt="fiat"></a>
+                          <div class="caption">
+                            <h3>Test drive FIAT</h3>
+                            <p>SA.UA</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="thumbnail">
+                          <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/-t_xvFjngns"><img src="images/rtr.jpg" alt="rtr"></a>
+                          <div class="caption">
+                            <h3>RTR Time Attack</h3>
+                            <p>SA.UA</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="thumbnail">
+                          <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/srRHgr1i8Zo"><img src="images/toyota.jpg" alt="toyota"></a>
+                          <div class="caption">
+                            <h3>Test drive Toyota gt86</h3>
+                            <p>SA.UA.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="thumbnail">
+                          <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo=""https://www.youtube.com/embed/DonjtP5rwDM"><img src="images/nissan.jpg" alt="nissan"></a>
+                          <div class="caption">
+                            <h3>Nissan Leaf</h3>
+                            <p>SA.UA.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="thumbnail">
+                          <a href="#" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/sO_b8GWd0nM"><img src="images/x5.jpg" alt="x5"></a>
+                          <div class="caption">
+                            <h3>Discovery & X5</h3>
+                            <p>Avtoblog</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
               </div>
             </div>
-        </div>
+            <div class="copyright-mob hidden-sm hidden-md hidden-lg">
+            <p>COPYRIGHT 2017 AZMT</p>
+          </div>
+          </div>
         </div>
       </div>
+    </div>
 
+  <script src="js/bootstrap.js"></script>
 
-
-</div>
-</div>
-</div>
-
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
-    <script src="js/js.js"></script>
   </body>
 </html>

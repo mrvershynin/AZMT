@@ -12,9 +12,9 @@
     $('#tab-content').load(toLoad)
     }
   });
- 
 
   $('.nav li a').click(function() {
+    $('.navbar-collapse').removeClass('in');
     var toLoad  = $(this).attr('href')+' #tab-content';
     $('#tab-content').fadeOut(300, loadContent);
     window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
@@ -27,7 +27,7 @@
   return false;
   }); 
 
-  //SEND EMAIL IN DESKTOP VERSION
+//SEND EMAIL IN DESKTOP VERSION
 function validateForm(){
   var email_test = $('#email').val();
   var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
@@ -101,6 +101,17 @@ function ifSuccessMob (data) {
     $('#resultModal').modal('show');
   }
 }
+
+//FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+$('body').on('click', '[data-toggle="modal"]', function () {
+    var theModal = $(this).data("target"),
+        videoSRC = $(this).attr("data-theVideo"),
+        videoSRCauto = videoSRC + "?autoplay=1";
+    $(theModal + ' iframe').attr('src', videoSRCauto);
+    $(theModal).click(function () {
+        $(theModal + ' iframe').attr('src', videoSRC);
+    });
+});
   
   });
 
