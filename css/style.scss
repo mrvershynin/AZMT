@@ -143,6 +143,7 @@ p {
 	overflow: hidden;
 }
 #tab-content {
+	position: relative;
 	height: 100%;
 	overflow: hidden;
 }
@@ -389,14 +390,11 @@ p {
 */
 
 .copyright-mob p {
-	position: absolute;
-	padding-right: 0px;
 	font-size: 12px;
 	bottom: 0px;
-	left: 50%;
-	transform: translate(-50%, 0); 
 }
 .copyright-mob {
-	height: 40px;
+	position: relative;
+	bottom: 5px;
 	margin-top: 20px;
 }
