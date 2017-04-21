@@ -1,0 +1,113 @@
+{
+	"volunteer": [{
+		"title": "UA ARMY STRONG",
+		"description": "Inspiring video for Army soldiers Ukraine.",
+		"image": "images/ua_army_strong.jpg",
+		"link": "https://www.youtube.com/embed/6Ctc8Mbq5fg",
+		"alt": "UA ARMY STRONG"
+	},	{
+		"title": "Animal rights",
+		"description": "The movie briefly shows the events of that day.",
+		"image": "images/animal.jpg",
+		"link": "https://www.youtube.com/embed/RDIEuoYPbmU",
+		"alt": "Animal"
+	},	{
+		"title": "UA ARMY STRONG",
+		"description": "The video for the Ukrainian army of the charitable organization 'Come alive'.",
+		"image": "images/back.jpg",
+		"link": "https://www.youtube.com/embed/IjHlRdLrAKA",
+		"alt": "Come back"
+	},	{
+		"title": "Join the Army of Cyborgs",
+		"description": "Inspiring video for Army soldiers Ukraine.",
+		"image": "images/cyborgs.jpg",
+		"link": "https://www.youtube.com/embed/2Y1ga0uD7UY",
+		"alt": "Cyborgs"
+	},	{
+		"title": "New Ukrainian Army",
+		"description": "Inspiring video for Army soldiers Ukraine.",
+		"image": "images/new_army.jpg",
+		"link": "https://www.youtube.com/embed/I7uvUos-sz8",
+		"alt": "New Army"
+	},	{
+		"title": "Ukraine mobilization",
+		"description": "Inspiring video for Army soldiers Ukraine.",
+		"image": "images/mobilization.jpg",
+		"link": "https://www.youtube.com/embed/7xOlPDBQesY",
+		"alt": "Mobilization"
+	}],
+	"commercial": [{
+		"title": "UA ARMY STRONG",
+		"description": "Inspiring video for Army soldiers Ukraine.",
+		"image": "images/ua_army_strong.jpg",
+		"link": "https://www.youtube.com/embed/6Ctc8Mbq5fg",
+		"alt": "UA ARMY STRONG"
+	},	{
+		"title": "Animal rights",
+		"description": "The movie briefly shows the events of that day.",
+		"image": "images/animal.jpg",
+		"link": "https://www.youtube.com/embed/RDIEuoYPbmU",
+		"alt": "Animal"
+	},	{
+		"title": "UA ARMY STRONG",
+		"description": "The video for the Ukrainian army of the charitable organization 'Come alive'.",
+		"image": "images/back.jpg",
+		"link": "https://www.youtube.com/embed/IjHlRdLrAKA",
+		"alt": "Come back"
+	},	{
+		"title": "Join the Army of Cyborgs",
+		"description": "Inspiring video for Army soldiers Ukraine.",
+		"image": "images/cyborgs.jpg",
+		"link": "https://www.youtube.com/embed/2Y1ga0uD7UY",
+		"alt": "Animal"
+	},	{
+		"title": "New Ukrainian Army",
+		"description": "Inspiring video for Army soldiers Ukraine.",
+		"image": "images/new_army.jpg",
+		"link": "https://www.youtube.com/embed/I7uvUos-sz8",
+		"alt": "New Army"
+	},	{
+		"title": "Ukraine mobilization",
+		"description": "Inspiring video for Army soldiers Ukraine.",
+		"image": "images/mobilization.jpg",
+		"link": "https://www.youtube.com/embed/7xOlPDBQesY",
+		"alt": "Animal"
+	}],
+	"auto": [{
+		"title": "UA ARMY STRONG",
+		"description": "Inspiring video for Army soldiers Ukraine.",
+		"image": "images/ua_army_strong.jpg",
+		"link": "https://www.youtube.com/embed/6Ctc8Mbq5fg",
+		"alt": "UA ARMY STRONG"
+	},	{
+		"title": "Animal rights",
+		"description": "The movie briefly shows the events of that day.",
+		"image": "images/animal.jpg",
+		"link": "https://www.youtube.com/embed/RDIEuoYPbmU",
+		"alt": "Animal"
+	},	{
+		"title": "UA ARMY STRONG",
+		"description": "The video for the Ukrainian army of the charitable organization 'Come alive'.",
+		"image": "images/back.jpg",
+		"link": "https://www.youtube.com/embed/IjHlRdLrAKA",
+		"alt": "Come back"
+	},	{
+		"title": "Join the Army of Cyborgs",
+		"description": "Inspiring video for Army soldiers Ukraine.",
+		"image": "images/cyborgs.jpg",
+		"link": "https://www.youtube.com/embed/2Y1ga0uD7UY",
+		"alt": "Animal"
+	},	{
+		"title": "New Ukrainian Army",
+		"description": "Inspiring video for Army soldiers Ukraine.",
+		"image": "images/new_army.jpg",
+		"link": "https://www.youtube.com/embed/I7uvUos-sz8",
+		"alt": "New Army"
+	},	{
+		"title": "Ukraine mobilization",
+		"description": "Inspiring video for Army soldiers Ukraine.",
+		"image": "images/mobilization.jpg",
+		"link": "https://www.youtube.com/embed/7xOlPDBQesY",
+		"alt": "Animal"
+	}]
+}

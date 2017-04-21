@@ -2,6 +2,25 @@
     $('.send').on('click', validateForm);
     $('.send-mob').on('click', validateFormMob);
 
+//Loading JSON
+     $(function(){
+        $.getJSON('content.json', function(data){
+          for(var i = 0; i < data.volunteer.length; i++){ 
+            $('#volunteer').append('<div class="col-sm-6 col-lg-4"><div class="thumbnail"><a href="#"" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo='+ data.volunteer[i].link +'><img src='+ data.volunteer[i].image +' alt='+ data.volunteer[i].alt +'></a><div class="caption"><h3>'+ data.volunteer[i].title +'</h3><p>'+ data.volunteer[i].description +'</p></div></div></div>');
+          }
+        });
+        $.getJSON('content.json', function(data){
+          for(var i = 0; i < data.commercial.length; i++){ 
+            $('#commercial').append('<div class="col-sm-6 col-lg-4"><div class="thumbnail"><a href="#"" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo='+ data.commercial[i].link +'><img src='+ data.commercial[i].image +' alt='+ data.commercial[i].alt +'></a><div class="caption"><h3>'+ data.commercial[i].title +'</h3><p>'+ data.commercial[i].description +'</p></div></div></div>');
+          }
+        });
+        $.getJSON('content.json', function(data){
+          for(var i = 0; i < data.commercial.length; i++){ 
+            $('#auto').append('<div class="col-sm-6 col-lg-4"><div class="thumbnail"><a href="#"" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo='+ data.auto[i].link +'><img src='+ data.auto[i].image +' alt='+ data.auto[i].alt +'></a><div class="caption"><h3>'+ data.auto[i].title +'</h3><p>'+ data.auto[i].description +'</p></div></div></div>');
+          }
+        });
+      });
+
 //DYNAMIC LOAD #tab-content IN A INDEX.HTML
 // Check for hash value in URL
   var hash = window.location.hash.substr(1);
@@ -9,10 +28,9 @@
   var href = $(this).attr('href');
     if(hash==href.substr(0,href.length-5)){
   var toLoad = hash+'.html #tab-content';
-    $('#tab-content').load(toLoad)
+    $('#tab-content').load(toLoad);
     }
   });
-
   $('.nav li a').click(function() {
     $('.navbar-collapse').removeClass('in');
     var toLoad  = $(this).attr('href')+' #tab-content';
@@ -23,7 +41,26 @@
     }
     function showNewContent() {
       $('#tab-content').fadeIn(300);
+      //Loading JSON
+     $(function(){
+        $.getJSON('content.json', function(data){
+          for(var i = 0; i < data.volunteer.length; i++){ 
+            $('#volunteer').append('<div class="col-sm-6 col-lg-4"><div class="thumbnail"><a href="#"" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo='+ data.volunteer[i].link +'><img src='+ data.volunteer[i].image +' alt='+ data.volunteer[i].alt +'></a><div class="caption"><h3>'+ data.volunteer[i].title +'</h3><p>'+ data.volunteer[i].description +'</p></div></div></div>');
+          }
+        });
+        $.getJSON('content.json', function(data){
+          for(var i = 0; i < data.commercial.length; i++){ 
+            $('#commercial').append('<div class="col-sm-6 col-lg-4"><div class="thumbnail"><a href="#"" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo='+ data.commercial[i].link +'><img src='+ data.commercial[i].image +' alt='+ data.commercial[i].alt +'></a><div class="caption"><h3>'+ data.commercial[i].title +'</h3><p>'+ data.commercial[i].description +'</p></div></div></div>');
+          }
+        });
+        $.getJSON('content.json', function(data){
+          for(var i = 0; i < data.commercial.length; i++){ 
+            $('#auto').append('<div class="col-sm-6 col-lg-4"><div class="thumbnail"><a href="#"" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo='+ data.auto[i].link +'><img src='+ data.auto[i].image +' alt='+ data.auto[i].alt +'></a><div class="caption"><h3>'+ data.auto[i].title +'</h3><p>'+ data.auto[i].description +'</p></div></div></div>');
+          }
+        });
+      });
       }
+
   return false;
   }); 
 
@@ -112,7 +149,6 @@ $('body').on('click', '[data-toggle="modal"]', function () {
         $(theModal + ' iframe').attr('src', videoSRC);
     });
 });
-  
   });
 
   
