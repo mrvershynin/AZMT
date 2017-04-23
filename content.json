@@ -37,77 +37,77 @@
 		"alt": "Mobilization"
 	}],
 	"commercial": [{
-		"title": "UA ARMY STRONG",
-		"description": "Inspiring video for Army soldiers Ukraine.",
-		"image": "images/ua_army_strong.jpg",
-		"link": "https://www.youtube.com/embed/6Ctc8Mbq5fg",
-		"alt": "UA ARMY STRONG"
+		"title": "THE FIRST DRONE DYNAMO",
+		"description": "Advertising company 'People's rear'.",
+		"image": "images/dynamo.jpg",
+		"link": "https://www.youtube.com/embed/p7jKQYTF9EY",
+		"alt": "Dron"
 	},	{
-		"title": "Animal rights",
-		"description": "The movie briefly shows the events of that day.",
-		"image": "images/animal.jpg",
-		"link": "https://www.youtube.com/embed/RDIEuoYPbmU",
-		"alt": "Animal"
+		"title": "KARPATY TROPHY",
+		"description": "Promo video events KARPATY TROPHY.",
+		"image": "images/tropfy.jpg",
+		"link": "https://www.youtube.com/embed/gW2knO9s340",
+		"alt": "Trophy"
 	},	{
-		"title": "UA ARMY STRONG",
-		"description": "The video for the Ukrainian army of the charitable organization 'Come alive'.",
-		"image": "images/back.jpg",
-		"link": "https://www.youtube.com/embed/IjHlRdLrAKA",
-		"alt": "Come back"
+		"title": "Painting session",
+		"description": "Ksenia Kozeniuk.",
+		"image": "images/Painting.jpg",
+		"link": "https://www.youtube.com/embed/47FTT1Ao-Iw",
+		"alt": "Painting"
 	},	{
-		"title": "Join the Army of Cyborgs",
-		"description": "Inspiring video for Army soldiers Ukraine.",
-		"image": "images/cyborgs.jpg",
-		"link": "https://www.youtube.com/embed/2Y1ga0uD7UY",
-		"alt": "Animal"
+		"title": "Promo video",
+		"description": "podushka.ua",
+		"image": "images/podushka.jpg",
+		"link": "https://www.youtube.com/embed/SiP-gTcPrRw",
+		"alt": "podushka"
 	},	{
-		"title": "New Ukrainian Army",
-		"description": "Inspiring video for Army soldiers Ukraine.",
-		"image": "images/new_army.jpg",
-		"link": "https://www.youtube.com/embed/I7uvUos-sz8",
-		"alt": "New Army"
+		"title": "Promo survival ratesi",
+		"description": "Special forces Ukraine.",
+		"image": "images/special_forces.jpg",
+		"link": "https://www.youtube.com/embed/VdERWh-uI-o",
+		"alt": "special"
 	},	{
-		"title": "Ukraine mobilization",
-		"description": "Inspiring video for Army soldiers Ukraine.",
-		"image": "images/mobilization.jpg",
-		"link": "https://www.youtube.com/embed/7xOlPDBQesY",
+		"title": "Promo Web Service",
+		"description": "automobi.ua",
+		"image": "images/automobi.jpg",
+		"link": "https://www.youtube.com/embed/IDtUwMAvyrg",
 		"alt": "Animal"
 	}],
 	"auto": [{
-		"title": "UA ARMY STRONG",
-		"description": "Inspiring video for Army soldiers Ukraine.",
-		"image": "images/ua_army_strong.jpg",
-		"link": "https://www.youtube.com/embed/6Ctc8Mbq5fg",
-		"alt": "UA ARMY STRONG"
+		"title": "Rewiev Hummer H1",
+		"description": "SA.UA",
+		"image": "images/hummer.jpg",
+		"link": "https://www.youtube.com/embed/--mRmpWx-JQ",
+		"alt": "hummer"
 	},	{
-		"title": "Animal rights",
-		"description": "The movie briefly shows the events of that day.",
-		"image": "images/animal.jpg",
-		"link": "https://www.youtube.com/embed/RDIEuoYPbmU",
-		"alt": "Animal"
+		"title": "Test drive FIAT",
+		"description": "SA.UA",
+		"image": "images/fiat.jpg",
+		"link": "https://www.youtube.com/embed/jdEsEwnROJs",
+		"alt": "fiat"
 	},	{
-		"title": "UA ARMY STRONG",
-		"description": "The video for the Ukrainian army of the charitable organization 'Come alive'.",
-		"image": "images/back.jpg",
-		"link": "https://www.youtube.com/embed/IjHlRdLrAKA",
-		"alt": "Come back"
+		"title": "RTR Time Attack",
+		"description": "SA.UA",
+		"image": "images/rtr.jpg",
+		"link": "https://www.youtube.com/embed/-t_xvFjngns",
+		"alt": "rtr"
 	},	{
-		"title": "Join the Army of Cyborgs",
-		"description": "Inspiring video for Army soldiers Ukraine.",
-		"image": "images/cyborgs.jpg",
-		"link": "https://www.youtube.com/embed/2Y1ga0uD7UY",
-		"alt": "Animal"
+		"title": "Test drive Toyota gt86",
+		"description": "SA.UA",
+		"image": "images/toyota.jpg",
+		"link": "https://www.youtube.com/embed/srRHgr1i8Zo",
+		"alt": "toyota"
 	},	{
-		"title": "New Ukrainian Army",
-		"description": "Inspiring video for Army soldiers Ukraine.",
-		"image": "images/new_army.jpg",
-		"link": "https://www.youtube.com/embed/I7uvUos-sz8",
-		"alt": "New Army"
+		"title": "Nissan Leaf",
+		"description": "SA.UA",
+		"image": "images/nissan.jpg",
+		"link": "https://www.youtube.com/embed/DonjtP5rwDM",
+		"alt": "nissan"
 	},	{
-		"title": "Ukraine mobilization",
-		"description": "Inspiring video for Army soldiers Ukraine.",
-		"image": "images/mobilization.jpg",
-		"link": "https://www.youtube.com/embed/7xOlPDBQesY",
-		"alt": "Animal"
+		"title": "Discovery & X5",
+		"description": "Avtoblog",
+		"image": "images/x5.jpg",
+		"link": "https://www.youtube.com/embed/sO_b8GWd0nM",
+		"alt": "x5"
 	}]
 }

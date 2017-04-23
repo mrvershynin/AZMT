@@ -54,7 +54,7 @@
           }
         });
         $.getJSON('content.json', function(data){
-          for(var i = 0; i < data.commercial.length; i++){ 
+          for(var i = 0; i < data.auto.length; i++){ 
             $('#auto').append('<div class="col-sm-6 col-lg-4"><div class="thumbnail"><a href="#"" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo='+ data.auto[i].link +'><img src='+ data.auto[i].image +' alt='+ data.auto[i].alt +'></a><div class="caption"><h3>'+ data.auto[i].title +'</h3><p>'+ data.auto[i].description +'</p></div></div></div>');
           }
         });
