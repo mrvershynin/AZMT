@@ -120,11 +120,11 @@ p {
   padding-right: 0px;
 }
 
-.tab-content > .active {
+.tab-content .active {
   background: rgba(46, 50, 63, 0.6);
   margin-left: -20px;
   padding-left: 40px;
-  padding-top: 60px;
+  padding-top: 30px;
   color: white;
   height: 100%;
   overflow: auto;
@@ -159,7 +159,6 @@ p {
 
 .tab-content {
   height: 100%;
-  overflow: hidden;
 }
 
 #tab-content {
@@ -171,7 +170,6 @@ p {
 #work > .row > .slide {
   padding-left: 20px;
   padding-right: 10px;
-  overflow: scroll;
   background: rgba(46, 50, 63, 0.6);
 }
 
@@ -234,7 +232,7 @@ p {
 }
 
 .play:hover {
-  background: rgba(46, 50, 63, 0.4);
+  background: none;
 }
 
 .thumbnail > .caption > h3 {

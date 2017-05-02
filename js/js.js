@@ -1,6 +1,5 @@
  $('document').ready(function(){
     $('.send').on('click', validateForm);
-    $('.send-mob').on('click', validateFormMob);
 
 //Loading JSON
      $(function(){
@@ -15,12 +14,12 @@
           }
         });
         $.getJSON('content.json', function(data){
-          for(var i = 0; i < data.commercial.length; i++){ 
+          for(var i = 0; i < data.auto.length; i++){ 
             $('#auto').append('<div class="col-sm-6 col-lg-4"><div class="thumbnail"><a href="#"" class="play btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo='+ data.auto[i].link +'><img src='+ data.auto[i].image +' alt='+ data.auto[i].alt +'></a><div class="caption"><h3>'+ data.auto[i].title +'</h3><p>'+ data.auto[i].description +'</p></div></div></div>');
           }
         });
       });
-
+/*
 //DYNAMIC LOAD #tab-content IN A INDEX.HTML
 // Check for hash value in URL
   var hash = window.location.hash.substr(1);
@@ -31,6 +30,7 @@
     $('#tab-content').load(toLoad);
     }
   });
+
   $('.nav li a').click(function() {
     $('.navbar-collapse').removeClass('in');
     var toLoad  = $(this).attr('href')+' #tab-content';
@@ -59,11 +59,11 @@
           }
         });
       });
-      }
+      });
 
   return false;
   }); 
-
+*/
 //SEND EMAIL IN DESKTOP VERSION
 function validateForm(){
   var email_test = $('#email').val();
@@ -102,7 +102,7 @@ function ifSuccess (data) {
 }
 
 
-
+/*
 //SEND EMAIL IN MOBILE VERSION
 function validateFormMob(){
   var email_testMob = $('#email-mob').val();
@@ -138,7 +138,7 @@ function ifSuccessMob (data) {
     $('#resultModal').modal('show');
   }
 }
-
+*/
 //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
 $('body').on('click', '[data-toggle="modal"]', function () {
     var theModal = $(this).data("target"),
@@ -149,6 +149,7 @@ $('body').on('click', '[data-toggle="modal"]', function () {
         $(theModal + ' iframe').attr('src', videoSRC);
     });
 });
+
   });
 
   
